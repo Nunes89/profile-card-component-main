@@ -1,0 +1,100 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 79%);
+  --font-size: 18px;
+  --font-family: "Kumbh Sans";
+  --font-light: 400;
+  --font-bold: 700;
+  --radius: 20px;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--dark-cyan);
+}
+
+.card {
+  max-width: 375px;
+  border: 1px solid transparent;
+  margin: 22vh auto;
+  text-align: center;
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  background-image: url("../images/bg-pattern-card.svg");
+}
+
+.card-main {
+  height: 145px;
+  width: 100%;
+  margin-top: 140px;
+  background-color: var(--white);
+}
+
+.card-main .photo {
+  position: relative;
+  top: -35%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  margin-bottom: -35px;
+}
+
+.card-main .name,
+.card-footer .status {
+  color: var(--dark-blue);
+  font-size: var(--font-size);
+  font-weight: var(--font-bold);
+}
+
+.card .card-main .age {
+  font-weight: var(--font-light);
+  padding-left: 5px;
+}
+
+.card-main .city,
+.card-main .age,
+.card-footer .social-label {
+  color: var(--dark-gray-blue);
+}
+
+.card-main .city {
+  display: block;
+  padding: 15px;
+}
+
+.card .card-footer {
+  padding: 25px 0;
+  border-top: 1px solid var(--dark-gray);
+  background-color: var(--white);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.card-footer .social {
+  display: inline-block;
+  width: 28%;
+}
+
+.card-footer .social-label {
+  display: block;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
