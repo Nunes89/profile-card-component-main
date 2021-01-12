@@ -20,6 +20,10 @@
 body {
   font-family: var(--font-family);
   background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -345px -500px, 680px 350px;
 }
 
 .card {
